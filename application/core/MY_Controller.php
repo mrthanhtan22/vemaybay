@@ -32,7 +32,7 @@ Class MY_Controller extends CI_Controller
      */
     private function _check_login()
     {
-        $controller = $this->uri->rsegment('1');
+       $controller = $this->uri->rsegment('1');
         $controller = strtolower($controller);
         
         $login = $this->session->userdata('login');
