@@ -175,11 +175,11 @@
 					<td class="textC">16-08-2014</td>
 					
 					<td class="textC">
-							<a href="admin/tran/view/21.html" class="lightbox">
+							<a href="" class="lightbox">
 								<img src="<?php echo public_url('')?>/admin/images/icons/color/view.png" />
 							</a>
 							
-						   <a href="admin/tran/del/21.html" title="Xóa" class="tipS verify_action" >
+						   <a href="" title="Xóa" class="tipS verify_action" >
 						    <img src="<?php echo public_url('')?>/admin/images/icons/color/delete.png" />
 						   </a>
 					</td>

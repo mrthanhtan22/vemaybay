@@ -75,7 +75,7 @@
 			
 							<ul class="sub">
 											<li >
-							<a href="admin/admin.html">
+							<a href="<?php echo admin_url('admin') ?>">
 								Ban quản trị							</a>
 						</li>
 											<li >
