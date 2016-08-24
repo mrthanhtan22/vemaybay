@@ -1,7 +1,7 @@
 <?php $this->load->view('admin/product/head'); ?>
 <!--comment-->
 	<div class="wrapper" id="main_product">
-
+	<?php $this->load->view('admin/message', $this->data); ?>
 	<div class="widget">
 	
 		<div class="title">
@@ -126,11 +126,11 @@
 						<img src="<?php echo public_url('admin') ?>/images/icons/color/view.png" />
 				 </a>
 
-				 <a href="<?php echo admin_url('edit') ?>" title="Chỉnh sửa" class="tipS">
+				 <a href="<?php echo admin_url('product/edit/'.$row->id) ?>" title="Chỉnh sửa" class="tipS">
 					<img src="<?php echo public_url('admin') ?>/images/icons/color/edit.png" />
 				</a>
 				
-				<a href="<?php echo admin_url('delete') ?>" title="Xóa" class="tipS verify_action" >
+				<a href="<?php echo admin_url('product/delete/'.$row->id) ?>" title="Xóa" class="tipS verify_action" >
 				    <img src="<?php echo public_url('admin') ?>/images/icons/color/delete.png" />
 				</a>
 			</td>
