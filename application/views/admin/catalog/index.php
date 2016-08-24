@@ -34,7 +34,8 @@
 						 </div>
 							
 					     <div class='pagination'>
-			               			            </div>
+					     	
+			          	</div>
 					</td>
 				</tr>
 			</tfoot>
