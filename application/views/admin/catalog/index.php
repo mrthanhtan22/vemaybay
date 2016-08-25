@@ -28,7 +28,7 @@
 				<tr>
 					<td colspan="7">
 					     <div class="list_action itemActions">
-								<a href="#submit" id="submit" class="button blueB" url="user/del_all.html">
+								<a href="#submit" id="submit" class="button blueB" url="<?php echo admin_url('catalog/delete_all') ?>">
 									<span style='color:white;'>Xóa hết</span>
 								</a>
 						 </div>
@@ -43,9 +43,9 @@
 			<tbody>
 				<!-- Filter -->
 				<?php foreach ($list as $row):?>
-				<tr>
+				<tr class="row_<?php echo $row->id  ?>">
 					<td>
-						<input type="checkbox" name="<?php echo $row->id?>" value="19" />
+						<input type="checkbox" name="id[]" value="<?php echo $row->id?>" />
 					</td>
 					<td class="textC"><?php echo $row->id?></td>
 					<td>

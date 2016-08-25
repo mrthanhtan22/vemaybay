@@ -121,7 +121,7 @@
 								Slide							</a>
 						</li>
 											<li >
-							<a href="admin/news.html">
+							<a href="<?php echo admin_url('news') ?>">
 								Tin tức							</a>
 						</li>
 											<li >

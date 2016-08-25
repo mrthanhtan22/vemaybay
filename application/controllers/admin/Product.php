@@ -290,9 +290,52 @@
         $this->data['temp'] = 'admin/product/edit';
         $this->load->view('admin/main', $this->data);
     }
+    function del(){
 
+         $id = $this->uri->rsegment('3');
+            $this->_del($id);
+        $this->session->set_flashdata('message', 'Xoa thanh cong ');
+        redirect(admin_url('product'));
+        
 
+    }
+    function delete_all(){
 
+       $ids =  $this->input->post('ids');
+        foreach ($ids as $id) {
+            $this->_del($id);
+        }
+        $this->session->set_flashdata('message', 'Xoa thanh cong cac san pham ');
+        redirect(admin_url('product'));
+
+    }
+
+   private function _del($id){
+
+        $product = $this->product_model->get_info($id);
+        if(!$product)
+        {
+            //tạo ra nội dung thông báo
+            $this->session->set_flashdata('message', 'Không tồn tại sản phẩm này');
+            redirect(admin_url('product'));
+        }
+        $this->data['product'] = $product;
+        $this->product_model->delete($id);
+
+        $image_link = './upload/product'.$product->image_link;
+        if (file_exists($image_link)) {
+            unlink($image_link);
+        }
+
+        $image_list = json_decode($product->image_list);
+        foreach ($image_list as $img) {
+            $image_link = '.upload/product'.$img;
+            if (file_exists($image_link)) {
+                unlink($image_link);
+            }
+        }
+
+    }
 
 
 	}

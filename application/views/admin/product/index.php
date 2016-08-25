@@ -70,7 +70,7 @@
 		<tr>
 			<td colspan="6">
 				 <div class="list_action itemActions">
-						<a href="#submit" id="submit" class="button blueB" url="admin/product/del_all.html">
+						<a href="#submit" id="submit" class="button blueB" url="<?php echo admin_url('product/delete_all') ?>">
 							<span style='color:white;'>Xóa hết</span>
 						</a>
 				 </div>
@@ -84,7 +84,7 @@
 	
 	<tbody class="list_item">
 		<?php foreach ($list as $row): ?>
-	     <tr class='row_9'>	
+	     <tr class='row_<?php echo $row->id ?>'>	
 			<td><input type="checkbox" name="id[]" value="<?php echo $row->id ?>" /></td>
 			
 			<td class="textC"><?php echo $row->id ?></td>
@@ -116,7 +116,7 @@
 				</td>
 
 				
-				<td class="textC">01-01-1970</td>
+				<td class="textC"><?php echo get_date($row->created) ?></td>
 				
 				<td class="option textC">
 
@@ -130,7 +130,7 @@
 					<img src="<?php echo public_url('admin') ?>/images/icons/color/edit.png" />
 				</a>
 				
-				<a href="<?php echo admin_url('product/delete/'.$row->id) ?>" title="Xóa" class="tipS verify_action" >
+				<a href="<?php echo admin_url('product/del/'.$row->id) ?>" title="Xóa" class="tipS verify_action" >
 				    <img src="<?php echo public_url('admin') ?>/images/icons/color/delete.png" />
 				</a>
 			</td>

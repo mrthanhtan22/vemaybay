@@ -126,18 +126,47 @@
     function delete(){
     	
         $id = $this->uri->rsegment(3);
-       	$info = $this->catalog_model->get_info($id);
-       	if (!$info) {
-       		$this->session->flashdata('message','khong ton tai danh muc');
-       		redirect(admin_url('catalog'));
-       	}
-       	
-       	 $this->catalog_model->delete($id);
-       	
-       	$this->session->set_flashdata('message', 'Xoa thanh cong ');
-       	
+       	$this->_del($id);
+       	 $this->session->set_flashdata('message', 'Xóa dữ liệu thành công');
        	 redirect(admin_url('catalog'));
     }
+    function delete_all(){
 
+        $ids = $this->input->post('ids');
+        foreach ($ids as $id) {
+            $this->_del($id, false);
+        }
+        
+
+
+    }
+
+    private function _del($id){
+        $info = $this->catalog_model->get_info($id);
+        if (!$info) {
+            $this->session->set_flashdata('message','khong ton tai danh muc');
+           if($rediect)
+            {
+                redirect(admin_url('catalog'));
+            }else{
+                return false;
+            }
+        }
+        $this->load->model('product_model');
+        $product = $this->product_model->get_info_rule(array('catalog_id'=> $id), 'id');
+        if ($product) {
+            $this->session->set_flashdata('message','Danh mục '.$info->name.' xóa có chứa sản phẩm, phải xóa sản phẩm trước');
+            if($rediect)
+            {
+                redirect(admin_url('catalog'));
+            }else{
+                return false;
+            }
+        }
+
+         $this->catalog_model->delete($id);
+        
+        
+    }
 }
  ?>
