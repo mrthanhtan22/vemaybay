@@ -10,7 +10,7 @@
 				 <!-- diem di -->
 					<div class="form-group">
 					    <div class="input-group">
-					    	<div class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></div>
+					    	<div class="input-group-addon"><span class="fa fa-location-arrow" style="font-size:25px;color:#f4511e;"></span></div>
 					    	<input type="text" class="form-control" id="inputDiemdi" placeholder="Điểm đi" data-toggle="modal" data-target="#noidi" style="height:50px" maxlength="5">
 						</div>
 					</div>
@@ -20,7 +20,7 @@
 					<div class="form-group">
 					   
 					    <div class="input-group">
-					    	<div class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></div>
+					    	<div class="input-group-addon"><span class="fa fa-location-arrow" style="font-size:25px;color:#f4511e;"></span></div>
 					    	<input type="text" class="form-control" id="inputDiemden" placeholder="Điểm đến" data-toggle="modal" data-target="#noiden" style="height:50px">
 					    </div>
 					</div>
@@ -28,21 +28,21 @@
 
 					<div class="form-group">
 						<div class="input-group">
-				    		<div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+				    		<div class="input-group-addon"><span class="fa fa-calendar" style="font-size:25px;color:#f4511e;"></span></div>
 				    		<input type="text" name="ngaydi" id="inputNgaydi" class="form-control" placeholder="Ngày đi" required="required" title="" style="height:50px">
 				    	</div>
 					</div>
 
 					<div class="form-group">
 						<div class="input-group">
-				    		<div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+				    		<div class="input-group-addon"><span class="fa fa-calendar" style="font-size:25px;color:#f4511e;"></span></div>
 				    		<input type="text" name="ngayve" id="inputNgayve" class="form-control" placeholder="Ngày về" required="required" title="" style="height:50px" readonly="readonly">
 						  </div>
 					</div>		
 					<div class="form-group">
 							
 							<div class="input-group">
-				    		<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+				    		<div class="input-group-addon"><span class="fa fa-group" style="font-size:25px;color:#f4511e;"></span></div>
 				    		<input type="number" name="songuoi" id="inputSonguoi" class="form-control" placeholder="Số người" min="1" step="" required="required" title="songuoi" style="height:50px" data-toggle="modal" data-target="#soluong" >
 				    		<input type="hidden" name="nguoilon" id="nguoilon" class="form-control" value="">
 				    		<input type="hidden" name="treem" id="treem" class="form-control" value="">
@@ -91,9 +91,9 @@
 		<div  class="modal fade" id="noidi" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header">
+					<div class="modal-header" style="background-color: #333">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>Hãy chọn nơi đi</h4>
+						<h4 class="modal-title">Hãy chọn nơi đi</h4>
 					</div>
 					<div class="modal-body">
 						<div class="container-fluid">
@@ -144,9 +144,9 @@
 		<div  class="modal fade" id="noiden" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header">
+					<div class="modal-header" style="background-color: #333">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title"><span class="glyphicon glyphicon-map-marker"></span>Hãy chọn nơi đến</h4>
+						<h4 class="modal-title">Hãy chọn nơi đến</h4>
 					</div>
 					<div class="modal-body">
 						<div class="container-fluid">
@@ -211,7 +211,7 @@
 		<div class="modal fade" id="soluong">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header">
+					<div class="modal-header" style="background-color: #333">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						<h4 class="modal-title">Số hành khách</h4>
 					</div>
@@ -222,21 +222,21 @@
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 								<b><h5>Người lớn(> 11t ) </h5></b>
 								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+									<div class="input-group-addon"></div>
 									<input type="number" name="" id="inputNguoilon" class="form-control" value="1" min="1" max="" step="" required="required" title="" placeholder="Người lớn(>12t)">
 								</div>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 								<b><h5>Trẻ em(2t - 11t) </h5></b>
 								<div class="input-group">
-									<div class="input-group-addon"><span class=" glyphicon glyphicon-user"></span></div>
+									<div class="input-group-addon"></div>
 									<input type="number" name="" id="inputTreem" class="form-control" value="0" min="0" step="" required="required" title="" placeholder="Trẻ em (2-11t)">
 								</div>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 								<b><h5>Trẻ sơ sinh( < 2t) </h5></b>
 								<div class="input-group">
-									<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+									<div class="input-group-addon"></div>
 									<input type="number" name="" id="inputTresosinh" class="form-control" value="0" min="0" step="" required="required" title="" placeholder="Trẻ sơ sinh(<2t)">
 								</div>
 								</div>

@@ -10,7 +10,7 @@
 <!-- end header -->
 <!--Ve may bay khuyen mai -->
 	<div id="datve" class="container">
-		<?php $this->load->view('site/vekhuyenmai'); ?>
+		<?php $this->load->view('site/vekhuyenmai', $this->data); ?>
 	</div>
 <!--end ve khuyen mai -->
 <!-- tin khuyen mai va dich vu-->

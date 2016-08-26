@@ -18,9 +18,9 @@
         //load ra thu vien phan trang
         $this->load->library('pagination');
         $config = array();
-        $config['total'] = $total;//tong tat ca cac bài viết tren website
+        $config['total_rows'] = $total;//tong tat ca cac bài viết tren website
         $config['base_url']   = admin_url('news/index'); //link hien thi ra danh sach bài viết
-        $config['per_page']   = 5;//so luong bài viết hien thi tren 1 trang
+        $config['per_page']   = 3;//so luong bài viết hien thi tren 1 trang
         $config['uri_segment'] = 4;//phan doan hien thi ra so trang tren url
         $config['next_link']   = 'Trang kế tiếp';
         $config['prev_link']   = 'Trang trước';
@@ -29,7 +29,8 @@
         
         $segment = $this->uri->segment(4);
         $segment = intval($segment);
-        
+
+
         $input = array();
         $input['limit'] = array($config['per_page'], $segment);
         

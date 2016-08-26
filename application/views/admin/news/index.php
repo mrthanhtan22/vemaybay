@@ -34,8 +34,9 @@
 								</a>
 						 </div>
 							
-					     <div class='pagination'>
-			               			            </div>
+					 <div class='pagination'>
+			     	<?php echo $this->pagination->create_links();?>
+	            	</div>
 					</td>
 				</tr>
 			</tfoot>

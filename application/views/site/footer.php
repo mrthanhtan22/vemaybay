@@ -19,7 +19,7 @@
 				
 		</div>
 		<div class="col-sm-3">
-			<h3>Nhận ứng dụng GlobalFlight</h3>
+			<h3 style="color:#fff;">Nhận ứng dụng GlobalFlight</h3>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<img class="app-footer" src="<?php echo public_url()?>/images/appstore.png">
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="col-sm-3">
-			<h3>Theo dõi chúng tôi</h3>
+			<h3 style="color:#fff;">Theo dõi chúng tôi</h3>
 			<div class="row">
 					<div class="col-sm-3 icon-footer"><span class="fa fa-facebook-official"></span></div>
 					<div class="col-sm-3 icon-footer"><span class="fa fa-skype"></span></div>
@@ -45,6 +45,6 @@
 		 <a href="#myPage" title="To Top" class="scrollToTop">
 			
 		</a>
-			<p>Bootstrap Theme Made By ThanhTan<a href="http://www.globalflight.com.vn" title="Visit w3schools">http://globallight.com.vn</a></p>
+			<p>© Copyright 2016. All Rights Reserved.</p>
 	</div>
 </div>

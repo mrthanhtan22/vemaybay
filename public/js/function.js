@@ -39,11 +39,11 @@ $(document).ready(function(){
       $(window).scroll(function() {
         if ($(this).scrollTop() > 100 && $(window).width() > 800 ) {
           $('.scrollToTop').fadeIn();
-           $('#bg-search').addClass('fixed');
+           /*$('#bg-search').addClass('fixed');*/
 
         } else{
           $('.scrollToTop').fadeOut();
-          $('#bg-search').removeClass('fixed');
+          /*$('#bg-search').removeClass('fixed');*/
         }
       });
       $('.scrollToTop').click(function() {
