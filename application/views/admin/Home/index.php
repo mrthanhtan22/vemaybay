@@ -118,7 +118,7 @@
 		
 		<!-- Giao dich thanh cong gan day nhat -->
 		
-	<div class="widget">
+	<!--<div class="widget">
 		<div class="title">
 			<span class="titleIcon"><input type="checkbox" id="titleCheck" name="titleCheck" /></span>
 			<h6>Danh sách Giao dịch</h6>
@@ -466,7 +466,7 @@
 						</tbody>
 			
 		</table>
-	</div>
+	</div>-->
 
         	</div>
 	

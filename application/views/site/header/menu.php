@@ -11,11 +11,11 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 			  <ul class="nav navbar-nav navbar-right">
 			   
-			    <li><a href="#datve">ĐẶT VÉ</a></li>
-			    <li><a href="#khuyenmai">KHUYẾN MÃI</a></li>
-			    <li><a href="#thongtin">THÔNG TIN</a></li>
-			    <li><a href="<?php echo base_url('intro') ?>">GIỚI THIỆU</a></li>
-			    <li><a href="<?php echo base_url('contact') ?>">LIÊN HỆ</a></li>
+			    <li><a href="#datve"><strong>ĐẶT VÉ</strong></a></li>
+			    <li><a href="#khuyenmai"><strong>KHUYẾN MÃI</strong></a></li>
+			    <li><a href="#thongtin"><strong>TIN TỨC</strong></a></li>
+			    <li><a href="<?php echo base_url('intro') ?>"><strong>GIỚI THIỆU</strong></a></a></li>
+			    <li><a href="<?php echo base_url('contact') ?>"><strong>LIÊN HỆ</strong></a></a></li>
 			  </ul>
 			</div>
 		</div>

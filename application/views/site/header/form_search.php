@@ -58,7 +58,7 @@
 						<div class="container">
 
 							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br>
+								<div class="col-sm-12"><br>
 								<div class="radio">
 									<label class="radio-inline">
 										<input type="radio" name="choosechieu" id="khuhoi" value="khuhoi" checked="checked">
@@ -98,7 +98,7 @@
 					<div class="modal-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="col-sm-6">
 									 <ul class="item-di" style="list-style-type:none;">
 					                    <li class="title-footer">Miền Bắc</li>
 					                    <li><a id="choose-noidi" href="javascript:;"><b>Hà Nội</b> (HAN)</a></li>
@@ -116,7 +116,7 @@
 					                    <li><a href="javascript:;" rel="nofollow"><b>Tuy Hòa</b> (TBB)</a></li>
 					                </ul>
 								</div>
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="col-sm-6">
 									 <ul class="item" style="list-style-type:none;margin-bottom: 20px">
 					                    <li class="title-footer">Miền Nam</li>
 					                    <li><a href="javascript:;" rel="nofollow"><b>Hồ Chí Minh</b> (SGN)</a></li>
@@ -151,18 +151,18 @@
 					<div class="modal-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="col-sm-12">
 									<div class="row">
-										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<div class="col-sm-6">
 											<h3 class="title-footer"><strong>Sân bay quốc tế đến</strong></h3>
 									
 										</div>
-										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
+										<div class="col-sm-6 pull-left">
 											<input type="text" name="" id="modaldsanbay" class="form-control" value="" required="required" title="">
 										</div>
 									</div>
 								</div>
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="col-sm-6">
 									 <ul class="item" style="list-style-type:none;">
 					                    <li class="title-footer">Miền Bắc</li>
 					                    <li><a href="javascript:;"><b>Hà Nội</b> (HAN)</a></li>
@@ -180,7 +180,7 @@
 					                    <li><a href="javascript:;" rel="nofollow"><b>Tuy Hòa</b> (TBB)</a></li>
 					                </ul>
 								</div>
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="col-sm-6">
 									 <ul class="item" style="list-style-type:none;margin-bottom: 20px">
 					                    <li class="title-footer">Miền Nam</li>
 					                    <li><a href="javascript:;" rel="nofollow"><b>Hồ Chí Minh</b> (SGN)</a></li>
@@ -219,21 +219,21 @@
 						<form action="" method="POST" class="form-inline" role="form">
 							<div class="form-group">
 							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="col-sm-4">
 								<b><h5>Người lớn(> 11t ) </h5></b>
 								<div class="input-group">
 									<div class="input-group-addon"></div>
 									<input type="number" name="" id="inputNguoilon" class="form-control" value="1" min="1" max="" step="" required="required" title="" placeholder="Người lớn(>12t)">
 								</div>
 								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="col-sm-4">
 								<b><h5>Trẻ em(2t - 11t) </h5></b>
 								<div class="input-group">
 									<div class="input-group-addon"></div>
 									<input type="number" name="" id="inputTreem" class="form-control" value="0" min="0" step="" required="required" title="" placeholder="Trẻ em (2-11t)">
 								</div>
 								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="col-sm-4">
 								<b><h5>Trẻ sơ sinh( < 2t) </h5></b>
 								<div class="input-group">
 									<div class="input-group-addon"></div>

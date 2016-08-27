@@ -15,12 +15,12 @@
 <!--end ve khuyen mai -->
 <!-- tin khuyen mai va dich vu-->
 	<div id="khuyenmai" class="container">
-		<?php $this->load->view('site/tinkhuyenmai'); ?>
+		<?php $this->load->view('site/tinkhuyenmai', $this->data); ?>
 	</div>
 <!-- end tin khuyen mai va dich vu-->
 <!--ve may bay noi dia va quoc te-->
 	<div id="thongtin" class="container bg-grey">
-		<?php $this->load->view('site/tintuc'); ?>
+		<?php $this->load->view('site/tintuc', $this->data); ?>
 	</div>
 <!-- end ve may-->
  <!--nhan mail-->

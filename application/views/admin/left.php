@@ -24,7 +24,7 @@
 			
 						
 		</li>
-			<li class="tran">
+			<!--<li class="tran">
 		
 			<a href="admin/tran.html" class=" exp" >
 				<span>Quản lý bán hàng</span>
@@ -42,8 +42,8 @@
 						</li>
 									</ul>
 						
-		</li>
-			<li class="product">
+		</li>-->
+			<!--<li class="product">
 		
 			<a href="admin/product.html" class=" exp" >
 				<span>Sản phẩm</span>
@@ -65,7 +65,7 @@
 						</li>
 									</ul>
 						
-		</li>
+		</li>-->
 			<li class="account">
 		
 			<a href="admin/account.html" class=" exp" >
@@ -89,6 +89,38 @@
 									</ul>
 						
 		</li>
+
+		<li class="content">
+		
+			<a href="admin/content.html" class=" exp" >
+				<span>Nội dung</span>
+				<strong>3</strong>
+			</a>
+			
+							<ul class="sub">
+											<li >
+							<a href="<?php echo admin_url('slide') ?>">
+								Slide							</a>
+						</li>
+											<li >
+							<a href="<?php echo admin_url('news') ?>">
+								Tin tức							</a>
+						<!--</li>
+											<li >
+							<a href="admin/info.html">
+								Trang thông tin							</a>
+						</li>-->
+											<li >
+							<a href="<?php echo admin_url('tdeal') ?>">
+								Vé khuyến mãi							</a>
+						</li>
+									</ul>
+						
+		</li>
+
+
+
+
 			<li class="support">
 		
 			<a href="admin/support.html" class=" exp" >
@@ -108,33 +140,7 @@
 									</ul>
 						
 		</li>
-			<li class="content">
-		
-			<a href="admin/content.html" class=" exp" >
-				<span>Nội dung</span>
-				<strong>4</strong>
-			</a>
 			
-							<ul class="sub">
-											<li >
-							<a href="<?php echo admin_url('slide') ?>">
-								Slide							</a>
-						</li>
-											<li >
-							<a href="<?php echo admin_url('news') ?>">
-								Tin tức							</a>
-						</li>
-											<li >
-							<a href="admin/info.html">
-								Trang thông tin							</a>
-						</li>
-											<li >
-							<a href="admin/video.html">
-								Video							</a>
-						</li>
-									</ul>
-						
-		</li>
 	
 </ul>
 			
