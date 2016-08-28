@@ -44,6 +44,22 @@
             <div class="clear"></div>
           </div>
 
+           <div class="formRow">
+  <label for="param_cat" class="formLeft">Loại tin:<span class="req">*</span></label>
+  <div class="formRight">
+      <select name="catalog">
+              <option value=""></option>
+            <?php foreach ($catalogs as $row):?>
+
+               <option value="<?php echo $row->id ?>" <?php if($row -> id == $news->catalog_news_id) echo 'selected'; ?>> <?php echo $row->name?></option>
+
+            <?php endforeach; ?>
+            </select>     
+    <span class="autocheck" name="cat_autocheck"></span>
+    <div class="clear error" name="cat_error"></div>
+  </div>
+  <div class="clear"></div>
+</div>    
 
     <div class="formRow hide"></div>
              </div>
@@ -90,8 +106,8 @@
               </div><!-- End tab_container-->
               
               <div class="formSubmit">
-                  <input type="submit" class="redB" value="Thêm mới">
-                  <input type="reset" class="basic" value="Hủy bỏ">
+                  <input type="submit" class="redB" value="Cập nhật">
+                  <input type="reset" class="basic" value="Cancel" onclick="window.location.href = '<?php echo admin_url('news') ?>'; ">
                 </div>
               <div class="clear"></div>
         </div>
@@ -99,3 +115,14 @@
     </form>
 </div>
 <div class="clear mt30"></div>
+<script>
+var editor = CKEDITOR.replace( 'param_content', {
+    filebrowserBrowseUrl : '<?php echo public_url('js_chung')?>/ckfinder/ckfinder.html',
+    filebrowserImageBrowseUrl : '<?php echo public_url('js_chung')?>/ckfinder/ckfinder.html?type=Images',
+    filebrowserFlashBrowseUrl : '<?php echo public_url('js_chung')?>/ckfinder/ckfinder.html?type=Flash',
+    filebrowserUploadUrl : '<?php echo public_url('js_chung')?>/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    filebrowserImageUploadUrl : '<?php echo public_url('js_chung')?>/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+    filebrowserFlashUploadUrl : '<?php echo public_url('js_chung')?>/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+});
+CKFinder.setupCKEditor( editor, '../' );
+</script>

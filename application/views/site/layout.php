@@ -19,9 +19,9 @@
 	</div>
 <!-- end tin khuyen mai va dich vu-->
 <!--ve may bay noi dia va quoc te-->
-	<div id="thongtin" class="container bg-grey">
+	<!--<div id="thongtin" class="container bg-grey">
 		<?php $this->load->view('site/tintuc', $this->data); ?>
-	</div>
+	</div>-->
 <!-- end ve may-->
  <!--nhan mail-->
  	<div class="container-fluid text-center nhanmail">

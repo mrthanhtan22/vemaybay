@@ -7,7 +7,7 @@
 	{
 		
 		// Ckeditor
-		$('.editor').each(function()
+		/*$('.editor').each(function()
 		{
 			var id = $(this).attr('id');
 			
@@ -18,7 +18,7 @@
 			{
 				CKEDITOR.instances[id].updateElement();
 			});
-		});
+		});*/
 		
 		// Lightbox 
 		$('.lightbox').colorbox();

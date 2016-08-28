@@ -10,11 +10,15 @@
 	     function index()
 	    {
 	    	$input = array();
-	    	$list = $this->admin_model->get_list($input);
+            
+            
+	    	$list = $this->admin_model->get_list();
 	    	$this->data['list'] = $list;
 
 	    	$total = $this->admin_model->get_total();
 	    	$this->data['total'] = $total;
+
+
 
             $message = $this->session->flashdata('message');
             $this->data['message'] = $message;

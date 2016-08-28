@@ -60,10 +60,10 @@
 	    	if ($catalog_id > 0) {
 	    		$input['where']['catalog_id'] = $catalog_id;
 	    	}
-	    	/* end loc */
 
 	    	$list = $this->product_model->get_list($input);
 	    	$this->data['list'] = $list;
+            /* end loc */
 	    	/* end load phan trang*/
 
 

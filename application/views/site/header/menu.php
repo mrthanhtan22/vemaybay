@@ -13,7 +13,7 @@
 			   
 			    <li><a href="#datve"><strong>ĐẶT VÉ</strong></a></li>
 			    <li><a href="#khuyenmai"><strong>KHUYẾN MÃI</strong></a></li>
-			    <li><a href="#thongtin"><strong>TIN TỨC</strong></a></li>
+			    <li><a href="<?php echo base_url('tintuc') ?>"><strong>TIN TỨC</strong></a></li>
 			    <li><a href="<?php echo base_url('intro') ?>"><strong>GIỚI THIỆU</strong></a></a></li>
 			    <li><a href="<?php echo base_url('contact') ?>"><strong>LIÊN HỆ</strong></a></a></li>
 			  </ul>
