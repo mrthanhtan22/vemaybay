@@ -107,6 +107,7 @@ h1,h2,h3{
 .choose-text-p{
 	padding-left:40px; 
 	color: #929292;
+	margin-top: -30px !important;
 }
 .choose-text:hover{
 	color: #337ab7;

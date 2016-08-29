@@ -17,7 +17,7 @@
 
 			<li class="home">
 		
-			<a href="admin/home.html" class="active" id="current">
+			<a href="<?php echo admin_url() ?>" class="active" id="current">
 				<span>Bảng điều khiển</span>
 				<strong></strong>
 			</a>
@@ -79,11 +79,11 @@
 								Ban quản trị							</a>
 						</li>
 											<li >
-							<a href="admin/admin_group.html">
+							<a href="">
 								Nhóm quản trị							</a>
 						</li>
 											<li >
-							<a href="admin/user.html">
+							<a href="">
 								Thành viên							</a>
 						</li>
 									</ul>
@@ -121,7 +121,7 @@
 
 
 
-			<li class="support">
+			<!--<li class="support">
 		
 			<a href="admin/support.html" class=" exp" >
 				<span>Hỗ trợ và liên hệ</span>
@@ -139,7 +139,7 @@
 						</li>
 									</ul>
 						
-		</li>
+		</li>-->
 			
 	
 </ul>

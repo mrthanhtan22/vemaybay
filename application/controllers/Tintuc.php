@@ -89,6 +89,7 @@
         $this->load->view('site/khuyenmai/layout', $this->data);
     }
     function view(){
+            
             $this->load->model('news_model');
             $input = array();
             $news_list = $this->news_model->get_list();
@@ -100,6 +101,7 @@
 
             $this->data['temp'] = 'site/view/index';
             $this->load->view('site/view/layout', $this->data);
+            
         }
 }
  ?>
