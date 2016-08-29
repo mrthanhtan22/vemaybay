@@ -28,3 +28,7 @@ min-height: 25px;
 padding: 0 10px;
 text-decoration: none;
 }
+.content_img img{
+	 width: 100%;
+    height: auto;
+}

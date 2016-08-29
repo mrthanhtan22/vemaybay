@@ -10,7 +10,7 @@
 <div class="row">
 <div class="col-md-12">
 <ul class="breadcrumb">
-<li><a href="#">Home</a></li>
+<li><a href="<?php echo base_url('tintuc') ?>">Home</a></li>
 <li class="active">Blog</li>
 </ul>
 </div>
@@ -39,20 +39,22 @@
 		</div>
 
 <div class="post-date">
-<span class="day">10</span>
-<span class="month">Jan</span>
+<span class="day"> <?php echo get_days($info->created) ?></span>
+<span class="month"><?php echo get_date($info->created) ?></span>
 </div>
 
 <div class="post-content">
 
-<h2><a href="blog-post.html"><?php echo $info->title ?></a></h2>
+<h2><a href="<?php echo base_url('tintuc/view/'.$info->id)?>"><?php echo $info->title ?></a></h2>
 
 <div class="post-meta">
 	
 	<span><i class="fa fa-comments"></i> <a href="#"><?php $info->count_view ?> Comments</a></span>
 </div>
-
-	<p><?php echo $info->content ?></p>
+	<div class="content_img">
+		<p><?php echo $info->content ?></p>
+	</div>
+	
 
 
 
@@ -105,13 +107,13 @@
 		<li>
 		<div class="post-image">
 			<div class="img-thumbnail">
-			<a href="blog-post.html">
+			<a>
 			<img class="img-responsive" src="<?php echo base_url('upload/news/'.$row->image_link) ?>" alt="<?php echo $row->title ?>">
 			</a>
 			</div>
 		</div>
 			<div class="post-info">
-				<a href="blog-post.html"><?php echo $row->title ?></a>
+				<a href="<?php echo base_url('tintuc/view/'.$row->id)?>"><?php echo $row->title ?></a>
 				<div class="post-meta"><?php echo get_date($row->created) ?></div>
 			</div>
 		</li>

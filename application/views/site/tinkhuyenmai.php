@@ -29,37 +29,37 @@
 					<div class="panel-body">
 						<div class="row">
 								<div class="row">
-									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<div class="col-sm-2">
 										<span class="fa fa-motorcycle choose-icon" ></span>
 									</div>
-									<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+									<div class="col-sm-10">
 										<h2 class="choose-text chon">Sự hài lòng của khách hàng</h2>
 										<p class="choose-text choose-text-p">Đội ngũ nhân viên tư vấn nhiệt tình – phản hồi nhanh chóng – tác phong chuyên nghiệp.</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<div class="col-sm-2">
 										<span class="fa fa-money choose-icon" ></span>
 									</div>
-									<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+									<div class="col-sm-10">
 										<h2 class="choose-text chon">Cam kết giá vé tốt nhất.</h2>
 										<p class="choose-text choose-text-p">Công ty sẽ cung cấp cho khách hàng giá vé tốt nhất cho khách hàng.</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<div class="col-sm-2">
 										<span class="fa fa-motorcycle choose-icon" ></span>
 									</div>
-									<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+									<div class="col-sm-10">
 										<h2 class="choose-text chon">Giao vé tận nơi miễn phí</h2>
 										<p class="choose-text choose-text-p">Công ty hỗ trợ giao vé tận nơi miễn phí trong nội ô tp.Hồ Chí Minh.</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<div class="col-sm-2">
 										 <span class="material-icons choose-icon">people</span>
 									</div>
-									<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+									<div class="col-sm-10">
 										<h2 class="choose-text chon">Đối tác hàng không uy tín.</h2>
 										<p class="choose-text choose-text-p">Đại lý cấp 1 của Vietjet Air, Jetstar Pacific và các hãng hàng không khác, Bookin mang đến mức giá ưu đãi dành cho khách hàng.</p>
 									</div>

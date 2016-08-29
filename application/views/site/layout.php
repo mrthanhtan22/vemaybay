@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-	<?php $this->load->view('site/head'); ?>
+	<?php $this->load->view('site/head',$this->data); ?>
+	
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <!--header -->

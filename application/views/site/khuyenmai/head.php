@@ -2,10 +2,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title><?php echo $info->title ?></title>	
+		<title>Khuyến mãi</title>	
 
-		<meta name="keywords" content="<?php echo $info->meta_key?>" />
-		<meta name="description" content="<?php echo $info->meta_desc?>">
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
 		<meta name="author" content="lktc.vn">
 
 

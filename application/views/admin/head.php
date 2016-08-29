@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Hocphp.info</title>
+<title>Lien ket toan cau :. quan tri</title>
 
 <meta name="robots" content="noindex, nofollow" />
 

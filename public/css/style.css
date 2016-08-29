@@ -239,10 +239,10 @@ h1,h2,h3{
 .form-search{
 	padding-top: 30px;
 }
-.modal-header, h4, .close {
+.modal-header, h3 .close {
    /* background-color: #333 !important;*/
     color: #fff !important;
-    text-align: center;
+    text-align: center !important;
     font-size: 30px;
     letter-spacing: 5px;
 }
@@ -265,7 +265,7 @@ h1,h2,h3{
 }
 #bg-search{
 	padding-top:100px;
-	height: 303px;
+	/*height: 303px;*/
 }
 .scrollToTop{
 	width:100px; 
@@ -297,6 +297,10 @@ h1,h2,h3{
 	}
 	.khoangcach{
 		padding: 0;
+	}
+	.bg-search1{
+		background:rgb(52, 213, 245) none repeat scroll 0% 0%;
+		
 	}
 @media screen and (max-width: 800px){
 	.khoangcach{

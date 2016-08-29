@@ -3,7 +3,7 @@
 		<div class="col-sm-3">
 			<img src="<?php echo public_url()?>/images/favicon.png" class="footer-logo">
 			<ul class="item2" style="list-style-type:none;" >
-				<li><a href="">Liên hệ</a></li>
+				<li><a href="<?php echo base_url('contact') ?>">Liên hệ</a></li>
 				<li><a href="">Chính sách bảo mật</a></li>
 				<li><a href="">Luôn cam kết giá rẻ</a></li>
 				<li><a href="">Liên hệ quảng cáo với chúng tôi</a></li>
@@ -11,7 +11,7 @@
 		</div>
 		<div class="col-sm-3 footer-cot2">
 			<ul class="item1" style="list-style-type:none;">
-				<li><a href=""> Về chúng tôi</a></li>
+				<li><a href="<?php echo base_url('intro') ?>"> Về chúng tôi</a></li>
 				<li><a href=""> Điều lệ sử dụng</a></li>
 				<li><a href=""> Các điều kiện và điều khoản</a></li>
 				<li><a href=""> Điều lệ vận hành</a></li>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php $this->load->view('site/head'); ?>
-	<?php $this->load->view('site/contact/head'); ?>
+	
+	<?php $this->load->view('site/tintuc/head'); ?>
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">

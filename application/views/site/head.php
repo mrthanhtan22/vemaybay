@@ -19,4 +19,17 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo public_url()?>/lib/easy-autocomplete.css">
 	<script src="<?php echo public_url()?>/js/function.js"></script>
 	<script src="<?php echo public_url()?>/js/bootstrap-datepicker.js"></script>
+
+	<!--menu-->
 	
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="<?php echo public_url('contact') ?>/css/theme.css">
+		<link rel="stylesheet" href="<?php echo public_url('contact') ?>/css/theme-elements.css">
+		
+		
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="<?php echo public_url('contact') ?>/css/skins/default.css">
+
+		
+	<!-- end menu -->
