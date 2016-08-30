@@ -23,7 +23,9 @@
 					<div class="owl-carousel owl-theme" data-plugin-options='{"items":1}'>
 						<div>
 							<div class="img-thumbnail">
+								<a href="<?php echo base_url($slug_news . '-' . $row->id . '.html')?>">
 								<img  class="img-responsive" src="<?php echo base_url('upload/news/'.$row->image_link)?>" alt="<?php echo $row->title ?>">
+								</a>
 							</div>
 						</div>
 						

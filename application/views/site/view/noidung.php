@@ -17,7 +17,7 @@
 </div>
 <div class="row">
 <div class="col-md-12">
-<h1>Blog Post</h1>
+<h1>Chi tiết tin</h1>
 </div>
 </div>
 </div>
@@ -32,7 +32,7 @@
 <article class="post post-large blog-single-post">
 <div class="post-image">
 			<div class="img-thumbnail">
-			<a href="blog-post.html">
+			<a>
 			<img class="img-responsive" src="<?php echo base_url('upload/news/'.$info->image_link) ?>" alt="<?php echo $info->title ?>">
 			</a>
 			</div>
@@ -45,7 +45,7 @@
 
 <div class="post-content">
 
-<h2><a href="<?php echo base_url('tintuc/view/'.$info->id)?>"><?php echo $info->title ?></a></h2>
+<h2><a><?php echo $info->title ?></a></h2>
 
 <div class="post-meta">
 	
@@ -101,19 +101,19 @@
 	<div class="tab-content">
 	<div class="tab-pane active" id="popularPosts">
 	<?php foreach ($news_list as $row): ?>
-		
+		<?php $slug_news = str_slug($row->title) ?>
 	
 	<ul class="simple-post-list">
 		<li>
 		<div class="post-image">
 			<div class="img-thumbnail">
-			<a>
+			<a href="<?php echo base_url($slug_news . '-' . $row->id . '.html')?>">
 			<img class="img-responsive" src="<?php echo base_url('upload/news/'.$row->image_link) ?>" alt="<?php echo $row->title ?>">
 			</a>
 			</div>
 		</div>
 			<div class="post-info">
-				<a href="<?php echo base_url('tintuc/view/'.$row->id)?>"><?php echo $row->title ?></a>
+				<a href="<?php echo base_url($slug_news . '-' . $row->id . '.html')?>"><?php echo $row->title ?></a>
 				<div class="post-meta"><?php echo get_date($row->created) ?></div>
 			</div>
 		</li>
