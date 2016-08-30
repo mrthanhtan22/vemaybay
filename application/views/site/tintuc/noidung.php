@@ -13,6 +13,7 @@
 	<div class="col-md-9">
 	<div class="blog-posts">
 		<?php foreach ($news_list as $row): ?>
+			<?php $slug_news = str_slug($row->title) ?>
 	<article class="post post-medium">
 
 		<div class="row">
@@ -22,7 +23,7 @@
 					<div class="owl-carousel owl-theme" data-plugin-options='{"items":1}'>
 						<div>
 							<div class="img-thumbnail">
-								<img  class="img-responsive" src="<?php echo base_url('upload/news/'.$row->image_link) ?>" alt="<?php echo $row->title ?>">
+								<img  class="img-responsive" src="<?php echo base_url('upload/news/'.$row->image_link)?>" alt="<?php echo $row->title ?>">
 							</div>
 						</div>
 						
@@ -33,7 +34,7 @@
 
 				<div class="post-content">
 
-					<h2><a href="<?php echo base_url('tintuc/view/'.$row->id)?>"><?php echo $row->title ?></a></h2>
+					<h2><a href="<?php echo base_url($slug_news . '-' . $row->id . '.html')?>"><?php echo $row->title ?></a></h2>
 					<p><?php echo $row->intro ?></p>
 
 				</div>
@@ -46,7 +47,7 @@
 					<span><i class="fa fa-calendar"></i> <?php echo get_date($row->created) ?> </span>
 					
 					<span><i class="fa fa-comments"></i> <a href="#"><?php echo $row->count_view ?> read</a></span>
-					<a href="<?php echo base_url('tintuc/view/'.$row->id)?>" class="btn btn-xs btn-primary pull-right">Read more...</a>
+					<a href="<?php echo base_url($slug_news . '-' . $row->id . '.html')?>" class="btn btn-xs btn-primary pull-right">Read more...</a>
 				</div>
 			</div>
 		</div>

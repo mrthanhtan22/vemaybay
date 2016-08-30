@@ -40,6 +40,7 @@
         //lay nội dung của biến message
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
+
         
         //load view
         $this->data['temp'] = 'site/tintuc/index';
@@ -88,20 +89,22 @@
         $this->data['temp'] = 'site/khuyenmai/index';
         $this->load->view('site/khuyenmai/layout', $this->data);
     }
-    function view(){
+    function view($id){
             
             $this->load->model('news_model');
-            $input = array();
-            $news_list = $this->news_model->get_list();
-            $this->data['news_list'] = $news_list;
 
-            $id = $this->uri->segment(3);
+            /*$id = $this->uri->segment(3);*/
             $info = $this->news_model->get_info($id);
             $this->data['info'] = $info;
+
+            $input = array(); 
+            $news_list = $this->news_model->get_list();
+            $this->data['news_list'] = $news_list;
 
             $this->data['temp'] = 'site/view/index';
             $this->load->view('site/view/layout', $this->data);
             
         }
+
 }
  ?>

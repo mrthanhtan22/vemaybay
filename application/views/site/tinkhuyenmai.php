@@ -30,7 +30,7 @@
 		<div class="row">
 				<div class="row">
 					<div class="col-sm-2">
-						<span class="fa fa-motorcycle choose-icon" ></span>
+						<span class="fa fa-thumbs-o-up choose-icon" ></span>
 					</div>
 					<div class="col-sm-10">
 						<h2 class="choose-text chon">Sự hài lòng của khách hàng</h2>
